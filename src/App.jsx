@@ -27,7 +27,7 @@ function App() {
     fecha: '',
     personaContacto: '',
   });
-  const getAllVisitantes = async (page = 0, size = 10) => {
+  const getAllVisitantes = async (page = 0, size = 4) => {
     try {
       setCurrentPage(page);
       const { data } = await getVisitantes(page, size);

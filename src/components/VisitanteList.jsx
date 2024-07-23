@@ -21,7 +21,6 @@ const VisitanteList = ({ data, currentPage, getAllVisitantes }) => {
                 <a onClick={() => getAllVisitantes(currentPage + 1)} className={data.totalPages === currentPage + 1 ? 'disabled' : ''}>&raquo;</a>
             </div>            
             }
-
         </main>
     )
 }

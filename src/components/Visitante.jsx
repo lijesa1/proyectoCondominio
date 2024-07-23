@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Visitante = ({ visitante }) => {
-  return (
-    <Link to={`/visitantes/${visitante.id}`} className="contact__item">
+    return (
+        <Link to={`/visitantes/${visitante.id}`} className="contact__item">
             <div className="contact__header">
                 <div className="contact__image">
-                    <img src={visitante.photoUrl} alt={visitante.name}  />
+                    <img src={visitante.photoUrl} alt={visitante.name} />
                 </div>
                 <div className="contact__details">
                     <p className="contact_name">{visitante.name.substring(0, 15)} </p>
@@ -21,11 +21,11 @@ const Visitante = ({ visitante }) => {
                 <p><i className='bi bi-calendar-date'></i>{visitante.fecha.split('T')[0]}</p>
                 <p><i className='bi bi-person'></i>{visitante.personaContacto}</p>
                 <p><i className="bi bi-telephone"></i> {visitante.phone}</p>
-                <p>{visitante.status === 'Activo' ? <i className='bi bi-check-circle'></i> : 
+                <p>{visitante.status === 'Activo' ? <i className='bi bi-check-circle'></i> :
                     <i className='bi bi-x-circle'></i>} {visitante.status}</p>
             </div>
         </Link>
-  )
+    )
 }
 
 export default Visitante
