@@ -22,6 +22,10 @@ function App() {
     tower: '',
     title: '',
     status: '',
+    departamento: '',
+    motivo: '',
+    fecha: '',
+    personaContacto: '',
   });
   const getAllVisitantes = async (page = 0, size = 10) => {
     try {
@@ -55,6 +59,10 @@ function App() {
         tower: '',
         title: '',
         status: '',
+        departamento: '',
+        motivo: '',
+        fecha: '',
+        personaContacto: '',
       })
       getAllVisitantes();
     } catch (error) {
@@ -132,6 +140,22 @@ function App() {
               <div className="input-box">
                 <span className="details">Torre</span>
                 <input type="text" value={values.tower} onChange={onChange} name='tower' required />
+              </div>
+              <div className="input-box">
+                <span className="details">Departamento</span>
+                <input type="text" value={values.departamento} onChange={onChange} name='departamento' required />
+              </div>
+              <div className="input-box">
+                <span className="details">Motivo</span>
+                <input type="text" value={values.motivo} onChange={onChange} name='motivo' required />
+              </div>
+              <div className="input-box">
+                <span className="details">Fecha</span>
+                <input type="date" value={values.fecha} onChange={onChange} name='fecha' required />
+              </div>
+              <div className="input-box">
+                <span className="details">Contacto</span>
+                <input type="text" value={values.personaContacto} onChange={onChange} name='personaContacto' required />
               </div>
               <div className="input-box">
                 <span className="details">Estado</span>

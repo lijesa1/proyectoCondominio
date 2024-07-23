@@ -16,8 +16,12 @@ const Visitante = ({ visitante }) => {
             <div className="contact__body">
                 <p><i className="bi bi-envelope"></i> {visitante.email.substring(0, 20)} </p>
                 <p><i className="bi bi-geo"></i> {visitante.tower}</p>
+                <p><i className='bi bi-house'></i>{visitante.departamento}</p>
+                <p><i className='bi bi-question-diamond'></i>{visitante.motivo}</p>
+                <p><i className='bi bi-calendar-date'></i>{visitante.fecha.split('T')[0]}</p>
+                <p><i className='bi bi-person-circle'></i>{visitante.personaContacto}</p>
                 <p><i className="bi bi-telephone"></i> {visitante.phone}</p>
-                <p>{visitante.status === 'Active' ? <i className='bi bi-check-circle'></i> : 
+                <p>{visitante.status === 'Activo' ? <i className='bi bi-check-circle'></i> : 
                     <i className='bi bi-x-circle'></i>} {visitante.status}</p>
             </div>
         </Link>

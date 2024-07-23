@@ -13,7 +13,11 @@ const VisitanteDetail = ({ updateVisitante, updateImage }) => {
         tower: '',
         title: '',
         status: '',
-        photoUrl: ''
+        photoUrl: '',
+        departamento: '',
+        motivo: '',
+        fecha: '',
+        personaContacto: ''
     });
 
     const { id } = useParams();
@@ -99,6 +103,22 @@ const VisitanteDetail = ({ updateVisitante, updateImage }) => {
                                 <div className="input-box">
                                     <span className="details">Título</span>
                                     <input type="text" value={visitante.title} onChange={onChange} name="title" required />
+                                </div>
+                                <div className="input-box">
+                                    <span className="details">Departamento</span>
+                                    <input type="text" value={visitante.departamento} onChange={onChange} name="departamento" required />
+                                </div>
+                                <div className="input-box">
+                                    <span className="details">Motivo</span>
+                                    <input type="text" value={visitante.motivo} onChange={onChange} name="motivo" required />
+                                </div>
+                                <div className="input-box">
+                                    <span className="details">Fecha</span>
+                                    <input type="date" value={visitante.fecha.split('T')[0]} onChange={onChange} name="fecha" required />
+                                </div>
+                                <div className="input-box">
+                                    <span className="details">Contacto</span>
+                                    <input type="text" value={visitante.personaContacto} onChange={onChange} name="personaContacto" required />
                                 </div>
                                 <div className="input-box">
                                     <span className="details">Estado</span>
