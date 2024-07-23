@@ -10,7 +10,7 @@ const VisitanteDetail = ({ updateVisitante, updateImage }) => {
         name: '',
         email: '',
         phone: '',
-        address: '',
+        tower: '',
         title: '',
         status: '',
         photoUrl: ''
@@ -93,8 +93,8 @@ const VisitanteDetail = ({ updateVisitante, updateImage }) => {
                                     <input type="text" value={visitante.phone} onChange={onChange} name="phone" required />
                                 </div>
                                 <div className="input-box">
-                                    <span className="details">Dirección</span>
-                                    <input type="text" value={visitante.address} onChange={onChange} name="address" required />
+                                    <span className="details">Torre</span>
+                                    <input type="text" value={visitante.tower} onChange={onChange} name="tower" required />
                                 </div>
                                 <div className="input-box">
                                     <span className="details">Título</span>

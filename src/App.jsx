@@ -19,7 +19,7 @@ function App() {
     name: '',
     email: '',
     phone: '',
-    address: '',
+    tower: '',
     title: '',
     status: '',
   });
@@ -52,7 +52,7 @@ function App() {
         name: '',
         email: '',
         phone: '',
-        address: '',
+        tower: '',
         title: '',
         status: '',
       })
@@ -130,8 +130,8 @@ function App() {
                 <input type="text" value={values.phone} onChange={onChange} name='phone' required />
               </div>
               <div className="input-box">
-                <span className="details">Dirección</span>
-                <input type="text" value={values.address} onChange={onChange} name='address' required />
+                <span className="details">Torre</span>
+                <input type="text" value={values.tower} onChange={onChange} name='tower' required />
               </div>
               <div className="input-box">
                 <span className="details">Estado</span>

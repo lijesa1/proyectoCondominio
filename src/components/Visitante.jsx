@@ -15,7 +15,7 @@ const Visitante = ({ visitante }) => {
             </div>
             <div className="contact__body">
                 <p><i className="bi bi-envelope"></i> {visitante.email.substring(0, 20)} </p>
-                <p><i className="bi bi-geo"></i> {visitante.address}</p>
+                <p><i className="bi bi-geo"></i> {visitante.tower}</p>
                 <p><i className="bi bi-telephone"></i> {visitante.phone}</p>
                 <p>{visitante.status === 'Active' ? <i className='bi bi-check-circle'></i> : 
                     <i className='bi bi-x-circle'></i>} {visitante.status}</p>
